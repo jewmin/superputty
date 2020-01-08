@@ -471,5 +471,9 @@ namespace SuperPutty
 
         public string TextOverride { get; set; }
 
+        private void fileTransferToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuperPuTTY.OpenScpSession(this.Session);
+        }
     }
 }
