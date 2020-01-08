@@ -592,6 +592,9 @@ namespace SuperPutty.Data
 
             public override void PaintValue(PaintValueEventArgs e)
             {
+                if (e.Value == null)
+                    return;
+
                 string ImageKey = e.Value.ToString();
                 Image img = SuperPuTTY.Images.Images[ImageKey];
 
